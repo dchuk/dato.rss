@@ -97,7 +97,7 @@ class Feed < ApplicationRecord
       created, entry = Entry.add(feed_id: id, entry: entry)
       if created
         count += 1
-        entry.enrich
+        # entry.enrich
       end
     end
 

@@ -12,7 +12,7 @@ module DatoRss
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
-    config.active_record.schema_format = :sql
+    config.active_record.schema_format = :ruby
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
